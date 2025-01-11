@@ -103,7 +103,8 @@ body {
     background-color: var(--cor-hover);
 }
 .apresentacao__imagem {
-    width: 40%;
+        width: 50%;
+        padding: 0% 18% 0%;
 }
 .rodape {
     padding: 15px;
