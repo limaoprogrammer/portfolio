@@ -124,7 +124,8 @@ body {
         justify-content: center;
     }
     .apresentacao__imagem {
-        width: 50% 50%;
+        width: 50%;
+        padding: 0% 18% 0%;
     }
     .apresentacao__links {
         display: flex;
