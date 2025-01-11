@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --cor-primario: #000000ee;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #9cec50;
+    --cor-quarta: #9cec50;
+    --cor-hover: #0A5EB0;
+
+    --fonte-principal: "Krona One", sans-serif;
+    --fonte-primaria: "Montserrat", sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primario);
+    color: var(--cor-secundaria);
+}
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+.apresentacao {
+    padding: 5% 10%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+.apresentacao__conteudo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.apresentacao__contd {
+    width: 60%;
+    padding: 0% 0% 10.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.apresentacao__linguaguem {
+    font-size: 2.5rem;
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-principal);
+}
+.apresentacao__img-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 15px; 
+    padding: 0% 10%;
+    justify-items: center; 
+    align-items: center; 
+}
+.apresentacao__img-container img {
+    width: 50%; 
+    max-width: 150px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.apresentacao__conteudo__ling {
+    font-size: 2.25rem;
+    color: var(--cor-quarta);
+    padding: 0% 1% 10%;
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    color: var(--cor-quarta);
+    padding: 0% 0% 1%;
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__conteudo__titulo__cursos {
+    font-size: 2.25rem;
+    color: var(--cor-quarta);
+    padding: 0% 0% 1%;
+    font-family: var(--fonte-principal);
+}
+
+.apresentacao__conteudo__dentro {
+    font-size: 1rem;
+    padding: 0% 0% 15%;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__cursos {
+    font-size: 1.5rem;
+    padding: 0% 0% 0%;
+    font-family: var(--fonte-primaria);
+}
+
+.apresentacao__conteudo__nam {
+    font-size: 1rem;
+    font-family: var(--fonte-primaria);
+}
+
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+.cabecalho__menu {
+    display: flex;
+    gap: 50px;
+}
+.cabecalho__menu__link {
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+.apresentacao__conteudo__txt {
+    font-size: 1.5rem;
+    font-family: var(--fonte-primaria);
+}
+.apresentacao__conteudo__texto {
+    font-size: 1.5rem;
+    padding: 0% 0% 10%;
+    font-family: var(--fonte-primaria);
+}
+.apresentacao__links {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+/* .apresentacao__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+} */
+.apresentacao__links__navegacao {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 15%;
+    text-align: center;
+    border-radius: 50px 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5px 0;
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+}
+.apresentacao__links__link:hover {
+    background-color: var(--cor-hover);
+}
+.apresentacao__imagem {
+    width: 100%;
+}
+.apresentacao__qr {
+    width: 30%;
+    padding: 63% 37%;
+}
+.apresentacao__img {
+    width: 60%;
+}
+.rodape {
+    padding: 15px;
+    color: var(--cor-primario);
+    background-color: var(--cor-terciaria);
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1300px) {
+    .cabecalho {
+        padding: 10%;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .apresentacao__imagem {
+        width: 75%;
+        padding: 0% 18% 0%;
+    }
+    .apresentacao__links {
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+    }
+    .apresentacao__prm {
+        font-size: 1.5rem;
+        font-family: var(--fonte-principal);
+        padding: 0% 0% 2% 0%;
+    }
+    .apresentacao {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10% 10%;
+    }
+    .apresentacao__conteudo__titulo {
+        font-size: 1.4rem;
+        font-family: var(--fonte-principal);
+        padding: 0% 0% 5%;
+    }
+    .apresentacao__conteudo__texto {
+        font-size: 1rem;
+        padding: 0% 0% 1%;
+        font-family: var(--fonte-primaria);
+    }
+
+    .apresentacao__conteudo__dentro {
+        font-size: 0.8rem;
+        padding: 1% 0%;
+        font-family: var(--fonte-primaria);
+    }
+    .apresentacao__conteudo__ling {
+        font-size: 2.25rem;
+        color: var(--cor-quarta);
+        padding: 0% 10% 10%;
+        font-family: var(--fonte-principal);
+    }
+    .apresentacao__conteudo__titulo__cursos {
+        font-size: 1.4rem;
+        color: var(--cor-quarta);
+        padding: 5% 0% 5%;
+        font-family: var(--fonte-principal);
+    }
+    .apresentacao__conteudo__cursos {
+        font-size: 1.2rem;
+        padding: 1% 0% 1%;
+        font-family: var(--fonte-primaria);
+    }
+
+    .apresentacao__conteudo__nam {
+        font-size: 0.8rem;
+        padding: 1% 0% 3%;
+        font-family: var(--fonte-primaria);
+    }
+    .apresentacao__conteudo {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .rodape {
+        padding: 8px;
+        color: var(--cor-primario);
+        background-color: var(--cor-terciaria);
+        text-align: center;
+        align-items: center;
+        font-family: var(--fonte-primaria);
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
