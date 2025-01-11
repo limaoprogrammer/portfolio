@@ -123,8 +123,7 @@ body {
         justify-content: center;
     }
     .apresentacao__imagem {
-        width: 50%;
-        padding: 0% 18% 0%;
+        width: 70%;
     }
     .apresentacao__links {
         display: flex;
