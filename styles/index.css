@@ -135,7 +135,7 @@ body {
         padding: 10% 5%;
     }
     .apresentacao__conteudo {
-        width: 50%;
+        width: auto;
     }
     .apresentacao__conteudo__titulo {
         font-size: 2.25rem;
